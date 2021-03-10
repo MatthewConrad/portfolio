@@ -1,14 +1,16 @@
 import * as React from "react"
-
-import Layout from "../components/layout"
+import { Link } from "gatsby"
 import SEO from "../components/seo"
 
 const NotFoundPage = () => (
-  <Layout>
+  <>
     <SEO title="404: Not found" />
     <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+    <p>
+      Sorry, but that page doesn't exist! Why don't you go back to{" "}
+      <Link to="/">my portfolio</Link>?
+    </p>
+  </>
 )
 
 export default NotFoundPage
