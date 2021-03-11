@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <>
     <SEO title="Full-stack Developer" />
-    <h1>Hello!</h1>
+    <h1>Hi, I&rsquo;m Matthew.</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <StaticImage

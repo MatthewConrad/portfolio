@@ -1,0 +1,23 @@
+@import "./reset";
+@import "./martel-font";
+@import "./poppins-font";
+
+$display-font: "martel";
+$body-font: "poppins";
+
+* {
+  font-family: $body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $display-font;
+}
+
+h1 {
+  font-weight: 900;
+}
