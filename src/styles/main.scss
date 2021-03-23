@@ -44,3 +44,17 @@ p {
   width: 1024px;
   margin: 0 auto;
 }
+
+.blobs {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.blob {
+  width: 100px;
+  height: 100px;
+}

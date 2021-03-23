@@ -23,6 +23,7 @@ const IndexPage = () => (
         photography, and am currently learning Italian and French.
       </p>
     </div>
+    <Blobs />
   </>
 );
 
