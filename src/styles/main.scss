@@ -9,6 +9,10 @@ $body-font: "poppins";
   font-family: $body-font;
 }
 
+html {
+  font-size: 16px;
+}
+
 h1,
 h2,
 h3,
@@ -16,8 +20,27 @@ h4,
 h5,
 h6 {
   font-family: $display-font;
+  line-height: 1.25em;
 }
 
 h1 {
   font-weight: 900;
+  font-size: 4.5rem;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+}
+
+p {
+  margin: 16px 0;
+  line-height: 2rem;
+}
+
+.content-wrapper {
+  width: 1024px;
+  margin: 0 auto;
 }
