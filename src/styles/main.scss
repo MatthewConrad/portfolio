@@ -1,6 +1,7 @@
 @import "./reset";
 @import "./martel-font";
 @import "./poppins-font";
+@import "./blobs";
 
 $display-font: "martel";
 $body-font: "poppins";
@@ -45,16 +46,9 @@ p {
   margin: 0 auto;
 }
 
-.blobs {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-}
-
-.blob {
-  width: 100px;
-  height: 100px;
+.hero-wrapper {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

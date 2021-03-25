@@ -1,25 +1,14 @@
 import * as React from "react";
 const Blobs = () => {
   const blobs = [];
-  const hexColors = [
-    "ffadad",
-    "ffd6a5",
-    "fdffb6",
-    "caffbf",
-    "9bf6ff",
-    "a0c4ff",
-    "bdb2ff",
-    "ffc6ff",
-  ];
-
-  const minRadius = 25;
-  const maxRadius = 75;
+  const minRadius = 35;
+  const maxRadius = 65;
 
   const randomInt = (min, max) => Math.floor(Math.random() * (max - min) + min);
   const radiusPropReducer = (val, radius) =>
     val.concat(`${radius}% ${100 - radius}% `);
 
-  for (let i = 0; i < hexColors.length; i++) {
+  for (let i = 0; i < 3; i++) {
     const radiusesA = new Array(2)
       .fill(0)
       .map(_val => randomInt(minRadius, maxRadius));
@@ -30,12 +19,18 @@ const Blobs = () => {
       `${radiusesA.reduce(radiusPropReducer, "")}` +
       `/ ${radiusesB.reduce(radiusPropReducer, "").trim()}`;
 
-    const speed = i % 2 !== 0 ? randomInt(-4, -2) : randomInt(2, 4);
+    const speed = [2, -4, 6];
     const style = {
       borderRadius: borderRadiuses,
-      backgroundColor: `#${hexColors[i]}`,
     };
-    blobs.push(<div className="blob" style={style} data-speed={speed}></div>);
+    blobs.push(
+      <div
+        className="blob"
+        id={`blob${i + 1}`}
+        style={style}
+        data-speed={speed[i]}
+      ></div>
+    );
   }
 
   const parallax = event => {

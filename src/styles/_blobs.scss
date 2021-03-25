@@ -1,0 +1,34 @@
+.blobs {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.blob {
+  position: absolute;
+  background-color: #cccccc;
+}
+
+#blob1 {
+  top: -96px;
+  left: 880px;
+  height: 560px;
+  width: 560px;
+}
+
+#blob2 {
+  top: 288px;
+  left: 400px;
+  height: 360px;
+  width: 360px;
+}
+
+#blob3 {
+  top: 48px;
+  left: 160px;
+  width: 240px;
+  height: 240px;
+}
