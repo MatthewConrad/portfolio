@@ -1,11 +1,12 @@
 import * as React from "react";
 import SEO from "../components/seo";
 import Blobs from "../components/blobs";
+import Timeline from "../components/timeline";
 
 const IndexPage = () => (
   <>
     <div className="content-wrapper">
-      <div className="hero-wrapper">
+      <section className="hero-wrapper">
         <SEO title="Full-stack Developer" />
         <h1>Hi, I&rsquo;m Matthew.</h1>
         <h2>I&rsquo;m a full-stack developer.</h2>
@@ -23,7 +24,8 @@ const IndexPage = () => (
           Trials. I also love baking and <br />
           photography, and am currently learning Italian and French.
         </p>
-      </div>
+      </section>
+      <Timeline />
     </div>
     <Blobs />
   </>
